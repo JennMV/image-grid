@@ -13,7 +13,7 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -33,27 +33,51 @@ img:nth-child(5) {
   display: none;
 }
 
-@media only screen and (min-width:25em) {
+@media only screen and (min-width: 25em) {
+
   img {
     width: 50%;
   }
+
   img:nth-child(2) {
     display: block;
   }
+
   img:nth-child(5) {
     display: block;
   }
+
   img:nth-child(1) {
     width: 100%;
-  }
   }
 }
 
-@media only screen and (min-width:38em) {
+@media only screen and (min-width: 38em) {
+
   img {
-    width: 33.333333333333%;
+    width: 33.3333%;
   }
+
+  img:nth-child(5) {
+    display: none;
+  }
+
   img:nth-child(1) {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  img {
+    width: 33.3333%;
+  }
+
+  img:nth-child(1) {
+    width: 66.6666%;
+  }
+
+  img:nth-child(5) {
+    display: block;
   }
 }
